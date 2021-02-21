@@ -1,0 +1,477 @@
+@charset "UTF-8";
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #111;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+/*-----------------------------------------ここからハンバーガーメニュー-----------------------------------------------------------------*/
+.header-wrap {
+  max-width: 1300px;
+  padding: 18px 28px;
+}
+
+.header-wrap__title {
+  display: none;
+}
+
+.header-wrap__description {
+  display: none;
+}
+
+.navi {
+  width: 100%;
+}
+
+.navi__li {
+  color: #fff;
+  font-size: 14px;
+}
+
+.navi li {
+  border-bottom: 1px solid #fff;
+  padding: 20px 30px;
+}
+
+.menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-wrap__menu {
+  font-size: 13px;
+  color: #656c6e;
+}
+
+.hamburger span {
+  width: 15px;
+  height: 1px;
+  display: block;
+  background-color: #111;
+  margin-bottom: 3px;
+}
+
+.toggle_contents {
+  display: none;
+  background-color: rgba(101, 108, 110, 0.9);
+}
+
+.background-color {
+  background-color: #fff;
+  opacity: 1 !important;
+}
+
+.open {
+  display: block;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*-----------------------------------------ここまでハンバーガーメニュー-----------------------------------------------------------------*/
+/*------------------------------------------ここからkey frames-----------------------------------------------*/
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.img1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  min-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -webkit-animation-name: changeMainImage;
+          animation-name: changeMainImage;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.img14 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  min-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -webkit-animation-name: changeMainImage;
+          animation-name: changeMainImage;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.img15 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  min-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -webkit-animation-name: changeMainImage;
+          animation-name: changeMainImage;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.img16 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  min-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -webkit-animation-name: changeMainImage;
+          animation-name: changeMainImage;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.img17 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  min-height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+  -webkit-animation-name: changeMainImageLast;
+          animation-name: changeMainImageLast;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
+  -webkit-animation-duration: 26s;
+          animation-duration: 26s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes changeMainImage {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  33% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 0;
+  }
+}
+
+@keyframes changeMainImage {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  33% {
+    opacity: 0.1;
+  }
+  35% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes changeMainImageLast {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+@keyframes changeMainImageLast {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+
+/*--------------------------------------------ここまでkey frames----------------------------------------------*/
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.center__title, .center__description {
+  color: #fff;
+  font-family: "Gill Sans Condensed Regular", sans-serif;
+}
+
+.center__title {
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.center__description {
+  margin-top: 20px;
+  font-size: 11px;
+}
+
+.center p {
+  text-align: center;
+}
+
+.pas-pol {
+  background-color: #f6f6f6;
+}
+
+.pas-pol__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 80px 25px;
+}
+
+.pas-pol__title {
+  font-weight: bold;
+  font-size: 35px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
+}
+
+.pas-pol__explain {
+  margin-bottom: 20px;
+  line-height: 1.7em;
+  font-size: 15px;
+}
+
+.pas-pol span {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.section {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.section__title {
+  font-size: 25px;
+}
+
+.section__link {
+  display: none;
+}
+
+.section__title {
+  text-align: center;
+}
+
+.flex-box__list {
+  margin-bottom: 20px;
+}
+
+.flex-box__text {
+  padding: 0 40px;
+  line-height: 1.8em;
+  font-weight: bold;
+  text-align: initial;
+  font-size: 18px;
+}
+
+.more {
+  border: 1px solid #111;
+  display: inline-block;
+  padding: 15px 60px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.section-background-color {
+  background-color: #f6f6f6;
+}
+
+.information {
+  margin-bottom: 40px;
+}
+
+.information-wrap {
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.explain {
+  margin-top: 20px;
+  text-align: initial;
+}
+
+.explain__title {
+  line-height: 1.8em;
+}
+
+.explain time {
+  margin-top: 10px;
+  color: #656c6e;
+  font-size: 10px;
+}
+
+.sns {
+  margin: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  padding: 0 20px;
+}
+
+.sns__list1 {
+  border: 1px solid #4872A9;
+  color: #4872A9;
+  padding: 15px 10px;
+  width: 150px;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sns__list2 {
+  border: 1px solid #70BDD2;
+  color: #70BDD2;
+  padding: 15px 10px;
+  width: 150px;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sns__list3 {
+  border: 1px solid #319BCC;
+  color: #319BCC;
+  padding: 15px 10px;
+  width: 150px;
+  font-size: 13px;
+  display: block;
+  text-align: center;
+}
+
+.sns__list4 {
+  border: 1px solid #B8D7C1;
+  color: #B8D7C1;
+  padding: 15px 10px;
+  width: 150px;
+  font-size: 13px;
+  display: block;
+  text-align: center;
+}
+
+.footer-navi {
+  background-color: #939899;
+}
+
+.footer-navi li {
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer-navi a {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #656C6E;
+  color: #fff;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.5em;
+  padding: 30px 0;
+}
+/*# sourceMappingURL=style.css.map */
