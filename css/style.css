@@ -359,6 +359,10 @@ img {
   font-size: 18px;
 }
 
+.flex-box img {
+  width: 70%;
+}
+
 .more {
   border: 1px solid #111;
   display: inline-block;
@@ -620,10 +624,14 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .flex-box img {
+    width: 100%;
+  }
   .flex-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 750px;
     margin-top: 100px;
   }
   .information-wrap {
